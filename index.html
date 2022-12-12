@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para la mujer más hermosa❤️</title>
+    <style>
+        *{
+    margin: 0;
+}
+
+.contenedor{
+    background: crimson;
+    width:  100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+p{
+    font-size: xx-large;
+    padding: 15%;
+}
+
+button{
+    font-size: xx-large;
+    padding: 0.75em;
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+}
+
+#noBtn{
+    position: absolute;
+}
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <p>¿Quieres ser mi novia?</p>
+        <button id="yesBtn">Si quiero💕</button>
+        <button id="noBtn">No quiero💔</button>
+    </div>
+    <script>
+        const yesBtn = document.querySelector('#yesBtn');
+
+yesBtn.addEventListener('click',function () {
+    alert('Sabia que ibas a decir que si🙈❤️')
+    alert("Ya somos novias wiiii🥰")
+    alert("Dios se lució con la novia que me tocó😍")
+    location.href = "https://www.youtube.com/watch?v=2FZii8iOhcA"
+});
+
+const noBtn = document.querySelector('#noBtn');
+
+noBtn.addEventListener('mouseover', function () {
+    const randomX = parseInt(Math.random()*100);
+    const randomY = parseInt(Math.random()*100);
+    noBtn.style.setProperty('top',randomY+'%');
+    noBtn.style.setProperty('left',randomX+'%');
+    noBtn.style.setProperty('transform',`translate(-${randomX}%,-${randomY}%)`);
+})
+    </script>
+</body>
+</html>
